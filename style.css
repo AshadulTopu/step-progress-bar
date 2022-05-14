@@ -1,0 +1,65 @@
+body{
+    background-image: url(./bg.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    color: #01ab97;
+}
+.progress{
+    margin: 300px auto;
+}
+.progress img{
+    height:80px;
+    width: 80px;
+    margin-bottom: 30px;
+}
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+} 
+ul li i{
+    background-color: #ccc ;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    padding: 10px; 
+    border-radius: 50%;
+}
+ul li i::after{
+    content: '';
+    height:5px;
+    width: 205px;
+    background: #ccc;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 130px;
+    z-index: -1;
+}
+ul li:nth-child(1) i,
+ul li:nth-child(2) i{
+    background: #148e14;
+}
+ul li:nth-child(1) i::after,
+ul li:nth-child(2) i::after{
+    background: #148e14;
+}
+
+ul li:nth-child(3) i{
+    background: #05ffff;
+}
+ul li:nth-child(3) i::after{
+    background: #05ffff;
+}
+
+ul li:first-child i::after{
+    width: 105px;
+    left: 100px;
+}
+ul li:last-child i::after{
+    width: 105px;
+}
